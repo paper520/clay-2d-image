@@ -11360,12 +11360,10 @@ process.umask = function() { return 0; };
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__App_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_easycss_core_build_easycss_min_css__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_easycss_core_build_easycss_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__node_modules_easycss_core_build_easycss_min_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__clay_js__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__node_modules_easycss_core_build_easycss_min_css__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__node_modules_easycss_core_build_easycss_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__node_modules_easycss_core_build_easycss_min_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__router__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__router__ = __webpack_require__(5);
 
 
 
@@ -11374,8 +11372,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 var vm = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
     el: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__clay_js__["a" /* default */])('#root')[0],
-    router: __WEBPACK_IMPORTED_MODULE_4__router__["a" /* default */],
-    render: createElement => createElement(__WEBPACK_IMPORTED_MODULE_1__App_vue___default.a)
+    router: __WEBPACK_IMPORTED_MODULE_3__router__["a" /* default */],
+    render: createElement => createElement('router-view')
 });
 
 /***/ }),
@@ -11403,13 +11401,23 @@ clay.config("$sizzleProvider", () => (selector, context) => __WEBPACK_IMPORTED_M
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__menu_vue__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__menu_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__menu_vue__);
 
 
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]);
 
+
+
 const router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
-    routes: []
+    routes: [{
+        path: '/',
+        redirect: 'menu'
+    }, {
+        path: '/menu',
+        component: __WEBPACK_IMPORTED_MODULE_2__menu_vue___default.a
+    }]
 });
 
 /* harmony default export */ __webpack_exports__["a"] = (router);
@@ -17643,9 +17651,9 @@ var Component = __webpack_require__(16)(
   /* cssModules */
   null
 )
-Component.options.__file = "/Users/kapok/Github/clay-2d-image/src/App.vue"
+Component.options.__file = "/Users/kapok/Github/clay-2d-image/src/menu.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
-if (Component.options.functional) {console.error("[vue-loader] App.vue: functional components are not supported with templates, they should use render functions.")}
+if (Component.options.functional) {console.error("[vue-loader] menu.vue: functional components are not supported with templates, they should use render functions.")}
 
 /* hot reload */
 if (false) {(function () {
@@ -17654,9 +17662,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-b6b91356", Component.options)
+    hotAPI.createRecord("data-v-f60ec48a", Component.options)
   } else {
-    hotAPI.reload("data-v-b6b91356", Component.options)
+    hotAPI.reload("data-v-f60ec48a", Component.options)
   }
 })()}
 
@@ -17725,13 +17733,17 @@ module.exports = function normalizeComponent (
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('router-view')], 1)
+  return _c('ul', [_c('li', [_c('router-link', {
+    attrs: {
+      "to": "/"
+    }
+  }, [_vm._v("点击查看")])], 1)])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-hot-reload-api").rerender("data-v-b6b91356", module.exports)
+     require("vue-hot-reload-api").rerender("data-v-f60ec48a", module.exports)
   }
 }
 
