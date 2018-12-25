@@ -1,27 +1,74 @@
 <template>
-    <div>
-        <nav>
-            <a href="https://github.com/yelloxing">Home</a>
-            <a href="https://github.com/yelloxing/clay-2d-image">Examples</a>
-            <a href="https://yelloxing.github.io/clay-core/doc/">Documentation</a>
-            <a href="https://github.com/yelloxing/clay-core">Source</a>
-        </nav>
+    <nav>
         <header>
-            <a href="https://github.com/yelloxing/clay-core">
-                Fork Me On Github
-            </a>
-            clay.js
+            <em @click="toGithub">
+                clay-2d-image
+            </em>
+            主要是使用clay.js绘制的一些有趣的图形用例
         </header>
-        <canvas>
-            非常抱歉，您的浏览器不支持canvas!
-        </canvas>
-        <footer>
-            <a href="https://github.com/yelloxing/clay-core">如果你对数据可视化感兴趣，可以加入我们！</a>
-        </footer>
-    </div>
+        <router-link to="/pieLayout">饼状图</router-link>
+        <a class='_blank'>-补充对齐-</a>
+        <a class='_blank'>-补充对齐-</a>
+        <a class='_blank'>-补充对齐-</a>
+        <a class='_blank'>-补充对齐-</a>
+        <a class='_blank'>-补充对齐-</a>
+        <a class='_blank'>-补充对齐-</a>
+        <a class='_blank'>-补充对齐-</a>
+    </nav>
 </template>
-<style lang="scss">
+<script>
+export default {
+  methods: {
+    toGithub: function() {
+      window.location.href = "https://github.com/yelloxing/clay-2d-image";
+    }
+  }
+};
+</script>
 
+<style lang="scss" scoped>
+nav {
+  text-align: center;
+  padding: 0.3rem;
+  & > header {
+    line-height: 0.3rem;
+    & > em {
+      display: block;
+      font-style: normal;
+      font-size: 0.22rem;
+      line-height: 0.6rem;
+      cursor: pointer;
+      &::before {
+        background-image: url("assets/clay.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+        display: block;
+        content: " ";
+        height: 0.7rem;
+        width: 0.7rem;
+        border-radius: 50%;
+        background-color: #ecf3f7;
+        margin: auto;
+      }
+    }
+  }
+  & > a {
+    margin: 0.2rem;
+    display: inline-block;
+    color: #2196f3;
+    width: 2.6rem;
+    height: 2rem;
+    text-align: center;
+    background-color: #ebf3f8;
+    vertical-align: top;
+    font-size: 0;
+    &._blank {
+      opacity: 0;
+      height: 0;
+    }
+  }
+}
 </style>
 
 
