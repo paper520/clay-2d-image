@@ -8,6 +8,7 @@
     </header>
     <router-link to="/pie_one"></router-link>
     <router-link to="/tree_one"></router-link>
+    <router-link to="/other_one"></router-link>
     <a class='_blank'>-补充对齐-</a>
     <a class='_blank'>-补充对齐-</a>
     <a class='_blank'>-补充对齐-</a>
@@ -31,7 +32,7 @@ export default {
 <style lang="scss" scoped>
 nav {
   text-align: center;
-  padding: 0.3rem;
+  padding: 0.3rem 0;
   & > header {
     line-height: 0.3rem;
     & > em {
@@ -57,8 +58,8 @@ nav {
   }
   & > a {
     display: inline-block;
-    width: 4rem;
-    height: 3rem;
+    width: 3rem;
+    height: 2rem;
     text-align: center;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -74,6 +75,9 @@ nav {
     }
     &:nth-child(3) {
       background-image: url("assets/tree_one.png");
+    }
+    &:nth-child(4) {
+      background-image: url("assets/other_one.png");
     }
   }
 }
