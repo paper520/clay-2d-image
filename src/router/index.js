@@ -9,6 +9,7 @@ import pie_one from '../components/pie/one.vue';
 import tree_one from '../components/tree/one.vue';
 import other_one from '../components/other/one.vue';
 import other_two from '../components/other/two.vue';
+import other_three from '../components/other/three.vue';
 
 const router = new VueRouter({
     routes: [{
@@ -23,6 +24,7 @@ const router = new VueRouter({
     { path: '/tree_one', component: tree_one },
     { path: '/other_one', component: other_one },
     { path: '/other_two', component: other_two },
+    { path: '/other_three', component: other_three },
 
     ]
 });
