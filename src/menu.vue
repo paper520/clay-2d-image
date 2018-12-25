@@ -62,6 +62,7 @@ nav {
     display: inline-block;
     width: 3rem;
     height: 2rem;
+    margin-top: 0.4rem;
     text-align: center;
     background-size: 100% auto;
     background-repeat: no-repeat;
