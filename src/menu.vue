@@ -9,6 +9,7 @@
     <router-link to="/pie_one"></router-link>
     <router-link to="/tree_one"></router-link>
     <router-link to="/other_one"></router-link>
+    <router-link to="/other_two"></router-link>
     <a class='_blank'>-补充对齐-</a>
     <a class='_blank'>-补充对齐-</a>
     <a class='_blank'>-补充对齐-</a>
@@ -78,6 +79,9 @@ nav {
     }
     &:nth-child(4) {
       background-image: url("assets/other_one.png");
+    }
+    &:nth-child(5) {
+      background-image: url("assets/other_two.png");
     }
   }
 }

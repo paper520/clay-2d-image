@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/yelloxing/clay-2d-image#readme",
   "dependencies": {
-    "clay-core": "^1.5.3",
+    "clay-core": "^1.5.5",
     "easycss-core": "1.3.2",
     "sizzle": "2.3.3",
     "vue": "2.5.21",
