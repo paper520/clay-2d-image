@@ -6,6 +6,7 @@ Vue.use(VueRouter);
 import menu_page from '../menu.vue';
 
 import pie_one from '../components/pie/one.vue';
+import tree_one from '../components/tree/one.vue';
 
 const router = new VueRouter({
     routes: [{
@@ -16,8 +17,8 @@ const router = new VueRouter({
         component: menu_page
     },
 
-    // 饼图
     { path: '/pie_one', component: pie_one },
+    { path: '/tree_one', component: tree_one },
 
     ]
 });

@@ -7,6 +7,7 @@
       主要是使用clay.js绘制的一些有趣2D的图形用例
     </header>
     <router-link to="/pie_one"></router-link>
+    <router-link to="/tree_one"></router-link>
     <a class='_blank'>-补充对齐-</a>
     <a class='_blank'>-补充对齐-</a>
     <a class='_blank'>-补充对齐-</a>
@@ -62,6 +63,7 @@ nav {
     background-size: 100% auto;
     background-repeat: no-repeat;
     vertical-align: top;
+    background-position: center;
     font-size: 0;
     &._blank {
       opacity: 0;
@@ -69,6 +71,9 @@ nav {
     }
     &:nth-child(2) {
       background-image: url("assets/pie_one.png");
+    }
+    &:nth-child(3) {
+      background-image: url("assets/tree_one.png");
     }
   }
 }

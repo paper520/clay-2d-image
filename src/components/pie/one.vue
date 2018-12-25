@@ -24,7 +24,7 @@ div {
   height: 100vh;
   text-align: center;
   & > canvas {
-    margin-top: 100px;
+    margin-top: 1rem;
   }
 }
 </style>
