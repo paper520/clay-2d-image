@@ -35,6 +35,8 @@
     "babel-core": "6.26.0",
     "babel-loader": "6.4.1",
     "file-loader": "2.0.0",
+    "node-sass": "4.11.0",
+    "sass-loader": "7.1.0",
     "style-loader": "0.23.1",
     "vue-loader": "11.3.4",
     "vue-template-compiler": "2.5.21",
