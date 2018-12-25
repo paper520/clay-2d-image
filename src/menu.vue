@@ -1,21 +1,22 @@
 <template>
-    <nav>
-        <header>
-            <em @click="toGithub">
-                clay-2d-image
-            </em>
-            主要是使用clay.js绘制的一些有趣的图形用例
-        </header>
-        <router-link to="/pieLayout">饼状图</router-link>
-        <a class='_blank'>-补充对齐-</a>
-        <a class='_blank'>-补充对齐-</a>
-        <a class='_blank'>-补充对齐-</a>
-        <a class='_blank'>-补充对齐-</a>
-        <a class='_blank'>-补充对齐-</a>
-        <a class='_blank'>-补充对齐-</a>
-        <a class='_blank'>-补充对齐-</a>
-    </nav>
+  <nav>
+    <header>
+      <em @click="toGithub">
+        clay-2d-image
+      </em>
+      主要是使用clay.js绘制的一些有趣2D的图形用例
+    </header>
+    <router-link to="/pie_one"></router-link>
+    <a class='_blank'>-补充对齐-</a>
+    <a class='_blank'>-补充对齐-</a>
+    <a class='_blank'>-补充对齐-</a>
+    <a class='_blank'>-补充对齐-</a>
+    <a class='_blank'>-补充对齐-</a>
+    <a class='_blank'>-补充对齐-</a>
+    <a class='_blank'>-补充对齐-</a>
+  </nav>
 </template>
+
 <script>
 export default {
   methods: {
@@ -54,18 +55,20 @@ nav {
     }
   }
   & > a {
-    margin: 0.2rem;
     display: inline-block;
-    color: #2196f3;
-    width: 2.6rem;
-    height: 2rem;
+    width: 4rem;
+    height: 3rem;
     text-align: center;
-    background-color: #ebf3f8;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     vertical-align: top;
     font-size: 0;
     &._blank {
       opacity: 0;
       height: 0;
+    }
+    &:nth-child(2) {
+      background-image: url("assets/pie_one.png");
     }
   }
 }

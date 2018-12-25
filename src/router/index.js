@@ -5,7 +5,7 @@ Vue.use(VueRouter);
 
 import menu_page from '../menu.vue';
 
-import pieLayout from '../components/pieLayout/index.vue';
+import pie_one from '../components/pie/one.vue';
 
 const router = new VueRouter({
     routes: [{
@@ -14,10 +14,12 @@ const router = new VueRouter({
     }, {
         path: '/menu',
         component: menu_page
-    }, {
-        path: '/pieLayout',
-        component: pieLayout
-    }]
+    },
+
+    // 饼图
+    { path: '/pie_one', component: pie_one },
+
+    ]
 });
 
 export default router;
