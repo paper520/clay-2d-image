@@ -1,8 +1,3 @@
-一些有趣的二维图形交互集合
-==================================================
-
-[![](https://github.com/paper520/clay-2d-image/blob/master/src/assets/clay.png)](https://yelloxing.github.io/clay/doc/)
-
 如何查看？
 --------------------------------------
 查看已经开发好的例子非常简单，双击根目录的index,html即可。
